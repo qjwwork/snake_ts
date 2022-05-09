@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: #bfd4a8;
+    margin: 100px auto;
+    border: black solid 10px;
+    border-radius: 20px;
+    width: 360px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#scoreboard {
+    width: 304px;
+
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    // align-items:center;
+}
+
+#contain {
+    width: 304px;
+    height: 304px;
+    border: black solid 1px;
+    position: relative;
+
+    // align-items:center;  
+}
+
+#snake {
+    &>div {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border:#bfd4a8 solid 1px;
+        position: absolute;
+    }
+}
+#food{
+    left: 40px;
+    top: 100px;
+    position: absolute;
+    width:10px;
+    height:10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    
+    &>div{
+        width :4px;
+        height: 4px;
+        background-color: black;
+        // border:#bfd4a8 solid 0.5px;
+        transform: rotate(45deg);
+
+    }
+}
