@@ -5,11 +5,11 @@ class Food {
         this.element = document.getElementById('food')!;
     }
 
-    getX() {
+    get X() {
         return this.element.offsetLeft;
 
     }
-    getY() {
+    get Y() {
         return this.element.offsetTop;
 
     }
